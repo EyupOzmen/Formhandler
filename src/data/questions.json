@@ -1,0 +1,58 @@
+[
+  {
+    "ID": 1,
+    "QuestionType": "MULTISINGLE",
+    "Question": "Hangi markanın kampanyasını daha çok beğendiniz?",
+    "isRequired": true,
+    "Options": [
+      {
+        "ID": 1,
+        "Order": 1,
+        "Text": "Trendyol"
+      },
+      {
+        "ID": 2,
+        "Order": 2,
+        "Text": "Hepsiburada"
+      },
+      {
+        "ID": 3,
+        "Order": 3,
+        "Text": "n11"
+      },
+      {
+        "ID": 4,
+        "Order": 4,
+        "Text": "GittiGidyor"
+      }
+    ]
+  },
+  {
+    "ID": 2,
+    "QuestionType": "MULTIMULTI",
+    "Question": "Alışveriş yaptığınız kategorileri seçiniz.",
+    "isRequired": false,
+    "Options": [
+      {
+        "ID": 1,
+        "Order": 1,
+        "Text": "Elektronik"
+      },
+      {
+        "ID": 2,
+        "Order": 2,
+        "Text": "Moda"
+      },
+      {
+        "ID": 3,
+        "Order": 3,
+        "Text": "Ev,Yaşam,Kırtasiye,Ofis"
+      },
+      {
+        "ID": 4,
+        "Order": 4,
+        "Text": "Kitap,Müzik,Film,Hobi"
+      }
+    ]
+  }
+]
