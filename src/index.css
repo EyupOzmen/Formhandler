@@ -162,7 +162,7 @@ input[type="checkbox"]:checked:after {
   justify-content: center;
   width: 80%;
   height: 100%;
-  margin: 100px auto;
+  margin: 150px auto;
   max-width: 400px;
   padding: 10px;
   border: 1px solid #2d27e3;
