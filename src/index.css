@@ -48,7 +48,7 @@ body {
   display: grid;
   width: 95%;
   height: 100%;
-  margin: 0 auto;
+  margin: 40px auto;
   padding: 3em;
   max-width: 1300px;
   justify-items: start;
@@ -62,6 +62,7 @@ body {
   width: 95%;
   justify-content: center;
   align-items: center;
+  z-index: 10;
 }
 .question-container:nth-child(1n) {
   width: 95%;
@@ -150,6 +151,7 @@ input[type="checkbox"]:checked:after {
   color: rgba(90, 72, 190, 0.808);
   border: 1px solid #2d27e3;
   box-shadow: -1px 2px 4px 1px #2d27e3;
+  z-index: 10;
 }
 .button:hover {
   cursor: pointer;
