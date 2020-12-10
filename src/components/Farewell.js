@@ -1,5 +1,5 @@
 import React from "react";
-import ok from "../assets/oh.webp";
+import ok from "../assets/emoji1.png";
 const Farewell = () => {
   return (
     <div className="question-container  farewell-container">

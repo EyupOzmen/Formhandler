@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -76,12 +77,13 @@ body {
   align-items: center;
 }
 .question {
+  background-color: #000000e8;
   display: block;
   padding: 0.2em;
   border: 1px solid #2d27e3;
   width: 100%;
   border-radius: 5px;
-  box-shadow: -1px 2px 8px 1px #2d27e381;
+  box-shadow: -1px 2px 8px 2px #2d27e381;
 }
 .question.isRequired {
   border: 1px solid #e34327dc;
@@ -89,11 +91,12 @@ body {
 }
 
 .question-header {
-  padding: 3px;
+  padding: 5px;
   margin-bottom: 10px;
   font-size: 12px;
   font-weight: 600;
   text-align: center;
+  color: #d1d3d1;
 }
 input[type="radio"]:after {
   width: 20px;
@@ -117,7 +120,7 @@ input[type="radio"]:checked:after {
   top: -2px;
   left: -1px;
   position: relative;
-  background-color: #2d27e3;
+  background-color: #000000e8;
   content: "";
   display: inline-block;
   visibility: visible;
@@ -144,7 +147,7 @@ input[type="checkbox"]:checked:after {
   top: -2px;
   left: -1px;
   position: relative;
-  background-color: #2d27e3;
+  background-color: #000000e8;
   content: "";
   display: inline-block;
   visibility: visible;
@@ -160,7 +163,7 @@ input[type="checkbox"]:checked:after {
   font-size: 12px;
   margin-left: 20px;
   margin-top: 5px;
-  color: #2d27e3;
+  color: #fff;
 }
 .button {
   padding: 0.3em;
@@ -174,6 +177,7 @@ input[type="checkbox"]:checked:after {
   cursor: pointer;
 }
 .farewell-container {
+  background-color: #000000e8;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -183,19 +187,26 @@ input[type="checkbox"]:checked:after {
   max-width: 400px;
   padding: 10px;
   border: 1px solid #2d27e3;
-  box-shadow: 1px 2px 8px 3px #2d27e3;
+  box-shadow: 1px 2px 5px 1px #2d27e3;
   border-radius: 5px;
-  color: #2d27e3;
+  color: #fff;
 }
 .farewell-image > img {
-  width: 150px;
+  width: 120px;
   height: 120px;
+  margin-right: 10px;
+}
+@media (max-width: 1900px) {
+  .survey-container {
+    max-width: 780px;
+    grid-template-columns: repeat(auto-fit, minmax(391px, 1fr));
+  }
 }
 
 @media (max-width: 1300px) {
   .survey-container {
-    max-width: 600px;
-    grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+    max-width: 750px;
+    grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   }
 }
 @media (max-width: 786px) {
