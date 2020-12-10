@@ -37,12 +37,18 @@ body {
   margin: 10px auto -10px;
 }
 .image-container > img {
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
   margin: 0 10px;
   object-fit: contain;
   background-color: #3e39cc70;
   border-radius: 5px;
+  filter: drop-shadow(2px 4px 18px #585858);
+}
+.image-container > p {
+  color: #3e39cc;
+  font-weight: 800;
+  filter: drop-shadow(2px 4px 8px #585858);
 }
 .survey-container {
   display: grid;
@@ -75,8 +81,13 @@ body {
   border: 1px solid #2d27e3;
   width: 100%;
   border-radius: 5px;
-  box-shadow: -1px 2px 4px 1px #2d27e3;
+  box-shadow: -1px 2px 8px 1px #2d27e381;
 }
+.question.isRequired {
+  border: 1px solid #e34327dc;
+  box-shadow: -1px 2px 8px 1px #e3432775;
+}
+
 .question-header {
   padding: 3px;
   margin-bottom: 10px;
@@ -85,11 +96,12 @@ body {
   text-align: center;
 }
 input[type="radio"]:after {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   border-radius: 15px;
   top: -2px;
   left: -1px;
+  margin-bottom: 5px;
   position: relative;
   background-color: #d1d3d1;
   content: "";
@@ -99,8 +111,8 @@ input[type="radio"]:after {
 }
 
 input[type="radio"]:checked:after {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   border-radius: 15px;
   top: -2px;
   left: -1px;
@@ -112,8 +124,8 @@ input[type="radio"]:checked:after {
   border: 2px solid white;
 }
 input[type="checkbox"]:after {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   border-radius: 5px;
   top: -2px;
   left: -1px;
@@ -126,8 +138,8 @@ input[type="checkbox"]:after {
 }
 
 input[type="checkbox"]:checked:after {
-  width: 15px;
-  height: 15px;
+  width: 20px;
+  height: 20px;
   border-radius: 5px;
   top: -2px;
   left: -1px;
@@ -139,18 +151,23 @@ input[type="checkbox"]:checked:after {
   border: 2px solid white;
 }
 .options {
+  display: flex;
+  align-items: center;
   padding: 1px 2px;
+  margin-bottom: 10px;
 }
 .options-label {
   font-size: 12px;
-  margin-left: 10px;
+  margin-left: 20px;
+  margin-top: 5px;
+  color: #2d27e3;
 }
 .button {
   padding: 0.3em;
   border-radius: 5px;
   color: rgba(90, 72, 190, 0.808);
   border: 1px solid #2d27e3;
-  box-shadow: -1px 2px 4px 1px #2d27e3;
+  box-shadow: -1px 2px 4px 1px #2d27e370, 1px 0px 4px 1px #2d27e367;
   z-index: 10;
 }
 .button:hover {
